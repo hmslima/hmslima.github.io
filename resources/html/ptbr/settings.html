@@ -1,0 +1,59 @@
+<h1>Configurações</h1>
+
+<h2>Mudar idioma</h2>
+
+<p>Apenas clique sobre o idioma desejado:</p>
+
+<ul>
+    <li><a href="#" onclick="changeLanguage('en', 'settings')">English</a></li>
+</ul>
+
+<br>
+
+<h2>Alternar entre o modo escuro e claro</h2>
+
+<div class="changeBackgroundButton notoEmoji" onclick="changeBackground(false)">🌜︎</div>
+
+<br><br><br>
+
+<h2>Detalhes técnicos sobre este site</h2>
+
+<p>
+    Este site foi construído em JavaScript puro, nenhum framework foi usado, então eu acho que será fácil para você estudá-lo se você 
+    quiser.
+</p>
+
+<p>
+    Como você pode ver, isto é praticamente um SPA <i>(Single Page Application)</i>, mas você pode favoritar uma página em específico
+    com um idioma específico atrávés de parâmetros de URL:
+</p>
+
+<ul>
+    <li>Idiomas
+        <ul>
+            <li><a href="?lang=en">?lang=en</a> <i>(Inglês. Na verdade, este é redundante porque é o padrão do site)</i></li> 
+            <li><a href="?lang=ptbr">?lang=ptbr</a> <i>(Português brasileiro)</i></li>
+        </ul>
+    </li>
+    <li>Páginas
+        <ul>
+            <li><a href="?page=home&lang=ptbr">?page=home&lang=ptbr</a> <i>(Página inicial. A opção padrão)</i></li>
+            <li><a href="?page=pro&lang=ptbr">?page=pro&lang=ptbr</a> <i>(Perfil profissional em português brasileiro)</i></li>
+            <li><a href="?page=projects&lang=ptbr">?page=projects&lang=ptbr</a> <i>(Projetos em português brasileiro)</i></li>
+            <li><a href="?page=settings&lang=ptbr">?page=settings&lang=ptbr</a> <i>(Configurações em português brasileiro)</i></li>
+        </ul>
+    </li>
+    <li>Modo de iluminação
+        <ul>
+            <li><a href="?mode=light">?mode=light</a> <i>(Modo claro. Na verdade, este parâmetro é redundante porque este é o padrão)</i></li>
+            <li><a href="?mode=dark">?mode=dark</a> <i>(Modo escuro)</i></li>
+        </ul>
+    </li>
+    <li>Você já deve ter reparado no caractere <i>&</i>, ele nos permite usar mais de um parâmetro:
+        <ul>
+            <li><a href="?page=pro&lang=ptbr">?page=pro&lang=ptbr</a> <i>(Perfil profissional em português brasileiro)</i></li>
+            <li><a href="?lang=en&page=projects">?lang=en&page=projects</a> <i>(Página de projetos em inglês, embora especificar "lang" como "en" seja redundante)</i></li>
+            <li><a href="?page=pro&lang=ptbr&mode=dark">?page=pro&lang=ptbr&mode=dark</a> <i>(Perfil profissional em português brasileiro e no modo escuro)</i></li>
+        </ul>
+    </li>
+</ul>

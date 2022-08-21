@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="70mm"
+   height="70mm"
+   viewBox="0 0 70 70"
+   version="1.1"
+   id="svg184"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="avalonia.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview186"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.72515432"
+     inkscape:cx="397.15684"
+     inkscape:cy="561.94935"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs181" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#7f3e9c;stroke:none;stroke-width:0.264583"
+       d="m 7.3740054,28.059466 c 7.7611196,1.843353 7.8472696,11.937736 0,13.758334 4.3782896,19.098419 27.2041896,29.909558 44.4499996,19.84375 v 3.704166 h 11.37708 c 1.03955,0 3.21469,0.408517 4.07379,-0.271991 1.0205,-0.808302 0.42413,-4.351338 0.42413,-5.548842 V 43.140717 c 0,-8.814329 0.0138,-17.169078 -4.94718,-24.870835 -10.18091,-15.8045944 -33.4653,-18.46675251 -46.91095,-5.287777 -4.18613,4.103079 -7.1577996,9.367071 -8.4668696,15.077361 M 34.626085,20.465977 c 6.39948,-0.922153 12.98998,2.14003 15.78954,8.122656 3.96743,8.479367 -1.17819,19.441584 -10.76246,20.822709 -6.39498,0.921543 -12.99607,-2.152121 -15.78954,-8.122709 -3.96891,-8.483335 1.18269,-19.442245 10.76246,-20.822656 M 4.9927554,30.878073 c -5.31296994,1.667933 -2.38692,9.862608 2.91041,8.06794 5.2315796,-1.772444 2.3086196,-9.706505 -2.91041,-8.06794 z"
+       id="path170" />
+  </g>
+</svg>

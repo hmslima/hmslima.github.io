@@ -1,0 +1,59 @@
+<h1>Settings</h1>
+
+<h2>Change language</h2>
+
+<p>Just click in the on the desired language:</p>
+
+<ul>
+    <li><a href="#" onclick="changeLanguage('ptbr', 'settings')">Português</a></li>
+</ul>
+
+<br>
+
+<h2>Toggle between dark and light mode</h2>
+
+<div class="changeBackgroundButton notoEmoji" onclick="changeBackground(false)">🌜︎</div>
+
+<br><br><br>
+
+<h2>Technical details about this website</h2>
+
+<p>
+    This website was build in vanilla JavaScript, no framework was used, so I think it will be easy for you to study it if you 
+    want.
+</p>
+
+<p>
+    As you can see, this is practically an SPA <i>(Single Page Application)</i>, but you can bookmark a specific page in a specific 
+    language through URL parameters:
+</p>
+
+<ul>
+    <li>Languages
+        <ul>
+            <li><a href="?lang=en">?lang=en</a> <i>(English. Actually this one is redundant because it is the default)</i></li> 
+            <li><a href="?lang=ptbr">?lang=ptbr</a> <i>(Brazilian Portuguese)</i></li>
+        </ul>
+    </li>
+    <li>Pages
+        <ul>
+            <li><a href="?page=home">?page=home</a> <i>(Home page. The default option)</i></li>
+            <li><a href="?page=pro">?page=pro</a> <i>(Professional Profile)</i></li>
+            <li><a href="?page=projects">?page=projects</a> <i>(Projects)</i></li>
+            <li><a href="?page=settings">?page=settings</a> <i>(Settings)</i></li>
+        </ul>
+    </li>
+    <li>Lighting mode
+        <ul>
+            <li><a href="?mode=light">?mode=light</a> <i>(Light mode. Actually this one is redundant because it is the default)</i></li>
+            <li><a href="?mode=dark">?mode=dark</a> <i>(Dark mode)</i></li>
+        </ul>
+    </li>
+    <li>You can mix these parameters by using the character <i>&</i>:
+        <ul>
+            <li><a href="?page=pro&lang=ptbr">?page=pro&lang=ptbr</a> <i>(Professional Profile's page in Brazilian Portuguese)</i></li>
+            <li><a href="?lang=en&page=projects">?lang=en&page=projects</a> <i>(Projects' page in English, although specifying "lang" as "en" is redundant)</i></li>
+            <li><a href="?page=pro&lang=ptbr&mode=dark">?page=pro&lang=ptbr&mode=dark</a> <i>(Professional Profile's page in Brazilian Portuguese, and in dark mode)</i></li>
+        </ul>
+    </li>
+</ul>

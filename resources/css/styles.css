@@ -1,0 +1,498 @@
+:root {
+    --navSize: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Dejavu Serif';
+    src: url(../fonts/dejavu-serif.book.woff);
+}
+
+@font-face {
+    font-family: 'Dejavu Serif';
+    src: url(../fonts/dejavu-serif.bold.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Dejavu Serif';
+    src: url(../fonts/dejavu-serif.italic.woff);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Dejavu Serif';
+    src: url(../fonts/dejavu-serif.bold-italic.woff);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Noto Emoji Custom';
+    src: url(../fonts/NotoEmoji-Regular.woff);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Dejavu Serif';
+    /* In case you edit this, don't forget to update the background in the JavaScript file!!! */
+    background-color: #FBFBE7; 
+    background-image: url(../img/background/bg-light.jpg);
+}
+
+nav {
+    width: 100%;
+    height: var(--navSize);
+    /*background-color: #800000;*/
+    background-image: url(../img/background/wood.jpg);
+    position: fixed;
+    z-index: 1;
+}
+
+.nav_space {
+    height: var(--navSize);
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+}
+
+.mobileMenuContainer {
+    display: none;
+    justify-content: flex-end;
+}
+
+.desktopMenuContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.navButtonWrapper {
+    display: flex;
+}
+
+.generalBoxedMenuButton {
+    width: var(--navSize);
+    height: var(--navSize);
+}
+
+.desktopMenuContainer .generalMenuButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    min-width: var(--navSize);
+    text-transform: uppercase;
+}
+
+#sub-menu .generalMenuButton {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    min-width: var(--navSize);
+    font-variant: small-caps;
+    justify-content: flex-end;
+}
+
+.generalMenuButton:hover {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    background-color: #520808;
+}
+
+.notoEmoji {
+    font-family: 'Noto Emoji Custom';
+}
+
+.hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.hamburgerMenuBars {
+   height: 3rem; 
+}
+
+#sub-menu {
+    display: none;
+    position: fixed;
+    float: right;
+    padding: 0.3rem;
+    min-width: 10rem;
+    /*background-color: #aa1d1d;*/
+    background-color: #644030;
+    z-index: 1;
+}
+
+.menuItemLink:hover {
+    background-color: #520808;
+}
+
+.menuLang {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.imgTextIntroduction {
+    display: flex;
+}
+
+.mainBox {
+    margin-top: 1rem;
+    min-height: 80vh;
+}
+
+.mainPhoto {
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+section {
+    min-height: 50vh;
+}
+
+p {
+    text-indent: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-position: inside;
+  }
+  
+li {
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+li ul {
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+}
+
+a:not(.navLink) {
+    text-decoration: none;
+    color: #DD4F4F;
+    font-weight: bold;
+}
+a:visited:not(.navLink) {color: #DD4F4F}
+a:hover:not(.navLink) {text-decoration: underline;}
+
+h1 {
+    font-variant: small-caps;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.BigContainer {
+    width: 70%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.container-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.changeBackgroundButton {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-style: solid;
+    border-radius: 50px;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.imgText {
+    height: 1.5rem;
+    vertical-align: middle;
+}
+
+.new_section {
+    margin-top: 3rem;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 40%;
+    height: 20rem;
+    border-radius: 0 0 25px 25px;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.cardTitle {
+    overflow-wrap: break-word;
+    /*background-color: #EEEEEE;*/
+    background-image: url(../img/background/metal.jpg);
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+}
+
+.cardBody {
+    padding: 0.5rem 1rem;
+}
+
+.cardFull {
+    min-height: 10rem;
+    border-radius: 0 0 25px 25px;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.cardFull h3 {
+    text-align: left;
+}
+
+.cardStacks {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    width: 100%;
+    margin-bottom: 1rem;
+    box-shadow: #000 2px 3px 2px;
+}
+
+.cardTitleStacks {
+    /*background-color:  #58D68D;*/
+    background-image: url(../img/background/green-paper.jpg);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow-wrap: break-word;
+    padding: 0.3rem 0.5rem 0.3rem 1rem;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+}
+
+.cardBodyStacks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 0.5rem 1rem;
+}
+
+.stack {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    width: 7rem;
+    font-weight: bold;    
+}
+
+.stack img {
+    width: 4rem;
+    
+}
+.svgStack {
+    filter: drop-shadow( 4px 4px 2px #383837); /* Don't forget to update the JavaScript file... */
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 0.8rem;
+}
+
+.blogPost {
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 25px;
+    line-height: 1.5;
+}
+.blogPostLight {background-color: rgba(255, 255, 255, 0.5);}
+.blogPostDark {background-color: rgba(0, 0, 0, 0.5);}
+
+.blogSearch {
+    text-align: right;
+}
+
+.blogPagination {
+    border-style: solid;
+    padding: 0.3rem;
+    margin: 0.3rem;
+}
+
+.blogItem {
+    padding: 0.3rem 0.3rem 0.3rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+}
+
+.blogDate {
+    font-size: 0.8rem;
+    text-align: right;
+    margin-top: 1.5rem;
+}
+
+.bloglink {
+    display: block;
+    text-align: right;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.copiedBlogPost {
+    font-size: 0.7rem;
+    text-align: right;
+}
+
+.underTheBlogPosts {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 50px;
+}
+.underTheBlogPosts2 {
+    border-style: solid;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+#presentation-paragraph {
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', monospace;
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 2880px) {
+    nav {
+        background-image: url(../img/background/wood-4k.jpg);
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .BigContainer {
+        width: 80%;
+    }
+    .container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .BigContainer {
+        width: 90%;
+    }
+    .container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .container {
+        width: 90%;
+    }
+    .desktopMenuContainer {
+        display: none;
+    }
+    .mobileMenuContainer {
+        display: flex;
+    }
+    .imgTextIntroduction {
+        display: block;
+    }
+    .mainPhoto {
+        display: block;
+        margin-right: 0;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .blogPost {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .card {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cardBodyStacks {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        width: 100%;
+    }
+}

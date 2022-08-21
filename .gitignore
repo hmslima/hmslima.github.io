@@ -1,3 +1,4 @@
 .directory
 website.code-workspace 
 OLD
+*.backup

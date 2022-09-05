@@ -142,6 +142,7 @@ function getClicks() {
 }
 
 async function getHtml(lang, fileName) {
+
     const result = await fetch(`resources/html/${lang}/${fileName}.html`).then(response => response.text());
     return result;
 }

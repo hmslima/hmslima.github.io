@@ -185,7 +185,7 @@ p {
 
 ul {
     list-style-position: inside;
-  }
+}
   
 li {
     padding-bottom: 0.5rem;
@@ -351,7 +351,6 @@ h3 {
 
 .stack img {
     width: 4rem;
-    
 }
 .svgStack {
     filter: drop-shadow( 4px 4px 2px #383837); /* Don't forget to update the JavaScript file... */
@@ -418,6 +417,30 @@ footer {
     border-radius: 25px;
 }
 
+span.code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #383837;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    padding: 0.1rem;
+}
+
+div.row {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+div.column2 { /* You put it inside a div.row */
+    margin: 0px auto;
+    width: 45%;
+}
+
+div.column3 { /* You put it inside a div.row */
+    margin: 0px auto;
+    width: 30%;
+}
+
 #presentation-paragraph {
     display: flex;
     align-items: center;
@@ -447,12 +470,8 @@ footer {
 }
 
 @media only screen and (max-width: 1200px) {
-    .BigContainer {
-        width: 90%;
-    }
-    .container {
-        width: 80%;
-    }
+    .BigContainer {width: 90%;}
+    .container {width: 80%;}
 }
 
 @media only screen and (max-width: 950px) {
@@ -483,6 +502,9 @@ footer {
     .card {
         width: 80%;
     }
+    div.row {display: block;}
+    div.column2 {width: 100%;}
+    div.column3 {width: 100%;}
 }
 
 @media only screen and (max-width: 600px) {

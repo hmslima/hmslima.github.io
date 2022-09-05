@@ -47,10 +47,31 @@
         <div class="container">
             <section class="mainBox" id="main_box">
 
+                <script>
+                    if (('fetch' in window) == false) {
+
+                        var browserlang = navigator.browserLanguage;
+
+                        var message = "";
+
+                        if (browserlang == "pt-BR") {
+                            message = "Você está usando um navegador muito antigo, por favor atualize-o ou use um navegador moderno! Eis algumas opções:";
+                        }
+                        else {
+                            message = "The browser you\'re using is too old, please update it or use a modern browser! Here are some options:";
+                        }
+
+                        document.getElementById("main_box").innerHTML = "<br><br><br>" + message;
+                        document.getElementById("main_box").innerHTML += "<br><br><ul>";
+                        document.getElementById("main_box").innerHTML += "<li><a href='https://www.mozilla.org/firefox/new/' target='_blank'>Mozila Firefox</a></li>";
+                        document.getElementById("main_box").innerHTML += "<li><a href='https://www.google.com/intl/en/chrome/' target='_blank'>Google Chrome</a></li>";
+                        document.getElementById("main_box").innerHTML += "</ul>";
+                    }
+                </script>
+
             </section>
         </div>
         
         <footer>Copyright © Henrique Matheus da Silva Lima.</footer>
-
     </body>
 </html>

@@ -2,7 +2,7 @@
 
 <p>
     Antes de iniciar o curso de Análise e Desenvolvimento de Sistemas, eu já havia usado algumas linguagens de programação 
-    nos meus projetos pessoais, como Pascal, Python, <b>C</b> e <b>JavaSript</b>, especialmente essas duas últimas linguagens. Mas, 
+    nos meus projetos pessoais, como Pascal, Python, <b>C</b> e <b>JavaScript</b>, especialmente essas duas últimas linguagens. Mas, 
     assim que iniciei o curso, procurei estudar as linguagens com mais demanda no mercado e que fossem muito usadas 
     no <i lang="en">back-end</i>.
 </p>
@@ -43,7 +43,8 @@
 <p>
     Meu dilema foi com a linguagem que eu usaria nos meus projetos pessoais; além do JavaScript, é claro. Antes de continuarmos, 
     já explico porque não seria o Java: é porque Java é terrivelmente pesado para as aplicações que eu queria fazer, exceto 
-    para aplicativos para Android, sem contar que o usuário precisaria baixar a o JRE. No fim, decidi que minha 
+    para aplicativos para Android e aplicações não triviais que rodam no lado do servidor, 
+    sem contar que o usuário precisaria baixar a o JRE. No fim, decidi que minha 
     “<i lang="en">toy language</i>” rodaria no navegador, seja compilada em WebAssembly para rodar no lado do cliente ou sendo 
     executada no lado do servidor. As duas linguagens candidatas eram <b>Rust</b> e <b>Go</b>, listei abaixo os motivos para 
     escolher cada uma delas e logo a seguir seus respectivos contra-argumentos:
@@ -56,8 +57,8 @@
 
         <ul>
             <li>
-                Ideal para criação de aplicações que rodam em WebAssembly em todos os sentidos. E como gosto de criar 
-                programas, seria o ideal.
+                Ideal para criação de aplicações que rodam em WebAssembly. E como gosto de criar 
+                programas.
                 <ul>
                     <li>
                         Por outro lado, a maioria das minhas aplicações podem ser feitas em JavaScript e se eu precisar 
@@ -71,9 +72,9 @@
                 </ul>
             </li>
             <li>
-                Apesar de não haver muitas oportunidades de emprego nessa linguagem, a sua comunidade era muito ativa e 
-                engajada, eu conseguia imaginar o Rust sendo mantido nas próximas décadas, a não ser que o paradigma de 
-                tudo mudasse, como a inteligência artificial tomando conta de tudo. Ou seja, a linguagem tinha um bom 
+                Apesar de não haver muitas oportunidades de emprego nessa linguagem, a sua comunidade é muito ativa e 
+                engajada, eu consego imaginar o Rust sendo mantido nas próximas décadas, a não ser que o paradigma de 
+                tudo mude, como a inteligência artificial tomando conta de tudo. Ou seja, a linguagem tem um bom 
                 prospecto de longetividade.
                 <ul>
                     <li>
@@ -81,10 +82,10 @@
                         escolher, Go oferecia, no mínimo, duas vezes mais vagas.
                     </li>
                     <li>
-                        Na época, eu tinha muito a ideia de criar projeto que eu manteria por décadas, como um RPG de texto que 
-                        eu manteria por toda a vida, mas comecei a mudar de opinião, como me forcar mais nos meus projetos 
-                        artísticos e criar projetos de programação que eu poderia reescrever em outra linguagem se a necessidade 
-                        exigisse.
+                        Por um tempo, eu tinha muito a ideia de criar projeto que eu manteria por décadas, como um RPG de texto que 
+                        eu manteria por toda a vida, mas comecei a mudar de visão, como me forcar mais nos meus projetos 
+                        artísticos e criar projetos de programação simples o suficiente para que eu pudesse reescrevê-los em 
+                        outra linguagem se a necessidade exigisse.
                     </li>
 
                 </ul>
@@ -99,25 +100,25 @@
 
         <ul>
             <li>
-                Eu tinha interesse em DevOps e Go era uma linguagem que tinha espaço nessa área.
+                Eu tenho interesse em DevOps e Go é uma linguagem que tem espaço nessa área.
                 <ul>
-                    <li>Entretanto, outras linguagens tendiam a ser mais utilizadas, como Java/C# ou Python</li>
+                    <li>Entretanto, outras linguagens tendem a ser mais utilizadas, como Java/C# ou Python</li>
                 </ul>
             </li>
             <li>
-                Na época, havia mais vagas para Go do que para Rust
+                Há mais vagas para Go do que para Rust
                 <ul>
                     <li>
-                        Mas, se fosse para eu conseguir um emprego como programador, muito provavelmente seria graças ao  
+                        Mas, se é para eu conseguir um emprego como programador, muito provavelmente será graças ao  
                         Java, JavaScript ou até mesmo C#.
                         <ul>
-                            <li>Mas o Go não deixava de ser uma linguagem que poderia me dar um emprego...</li>
+                            <li>Mas o Go não deixa de ser uma linguagem que pode me dar um emprego...</li>
                         </ul>
                     </li>
                 </ul>
             </li>
             <li>
-                Todas as dependências ficavam em um único executável.
+                Todas as dependências ficam em um único executável.
                 <ul>
                     <li>
                         Talvez não seja o ideal para criar aplicações em WebAssembly.
@@ -132,11 +133,11 @@
                 </ul>
             </li>
             <li>
-                Projetos importantes como Docker, Kubernetes, Terraform, CockroachDB, Hugo foram escritos em Go. Eu deveria 
+                Projetos importantes como Docker, Kubernetes, Terraform, CockroachDB e Hugo foram escritos em Go. Eu deveria 
                 acreditar no que o pessoal disse que o Go estava aqui para ficar
             </li>
             <li>
-                Bom, eu pretendia ser um desenvolvedor <i lang="en">back-end</i>, é normal que eu deveria me focar em 
+                Bom, eu pretendo ser um desenvolvedor <i lang="en">back-end</i>, é razoável que eu deveria me focar em 
                 linguagens feitas para rodar mais predominantemente no lado do servidor 🙂
             </li>
         </ul>
@@ -144,25 +145,26 @@
 </div>
 
 <p><i>
-    Sei que a comparação acima pareceu estranha, como se fosse uma discussão, mas ela é realmente isso, de tempos em tempos 
+    Sei que a comparação acima pareceu estranha, como se fosse uma discussão, mas ela é realmente isso. De tempos em tempos 
     eu me focava no Rust e em outros no Go. Escrever (e reler) esta comparação me ajudou na escolha.
-    Por que não aprender ambas as linguagens? Porque eu não queria estudar muitas 
+    <b>Por que não aprender ambas as linguagens?</b> Porque eu não queria estudar muitas 
     ao mesmo tempo e eu precisava me focar naquelas que me dariam um emprego!
 </i></p>
 
 <p>
-    Olhando a quantidade de vagas, eu poderia escolher o <b>C++</b> em vez do Rust/Go, mas essas duas linguagens eram modernas 
+    Olhando a quantidade de vagas, eu poderia escolher o <b>C++</b> em vez do Rust/Go, mas essas duas linguagens são modernas 
     e mais fáceis de trabalhar com outras bibliotecas e <i lang="en">frameworks</i>, sem contar que o C++ é mais utilizado com 
-    embarcados, não tanto com desenvolvimento web onde ficavam a maioria das vagas...
+    embarcados, não tanto com desenvolvimento web onde ficam a maioria das vagas...
 </p>
 
 <p>
     Após muito pensar, cheguei a conclusão de que Java seria o ideal para projetos que precisam rodar o tempo todo, como um 
-    MUD, e Go para serviços que só precisam funcionar de tempos em tempos, como um software que manipula PDFs. 
+    MUD, e Go para serviços que só precisam funcionar de tempos em tempos, como um software que manipula PDFs. Não tenho uma 
+    justificativa técnica pra isso, apenas uma desculpa para usar Java também em meus projetos pessoais.
     Então decidi-me por esta lista de linguagens:
 </p>
 
-<li><b>Java:</b> Nunca deixou de ser meu foco profissional, e para projetos pessoais que precisam rodar constantemente</li>
+<li><b>Java:</b> Nunca deixou de ser meu foco profissional</li>
 <li><b>JavaScript:</b> Alta demanda de mercado e muito usada nos meus projetos pessoais</li>
 <li><b>Go:</b> Para meus projetos pessoais quando o Java e o JavaScript não fossem convenientes</li>
 <li><i>Um pouco de <b>C#</b>, mas apenas para poder concorrer a vagas júnior ou estágio com essa linguagem</i></li>

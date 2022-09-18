@@ -9,31 +9,31 @@
 
 @font-face {
     font-family: 'Dejavu Serif';
-    src: url(../fonts/dejavu-serif.book.woff);
+    src: url(/resources/fonts/dejavu-serif.book.woff);
 }
 
 @font-face {
     font-family: 'Dejavu Serif';
-    src: url(../fonts/dejavu-serif.bold.woff);
+    src: url(/resources/fonts/dejavu-serif.bold.woff);
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Dejavu Serif';
-    src: url(../fonts/dejavu-serif.italic.woff);
+    src: url(/resources/fonts/dejavu-serif.italic.woff);
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Dejavu Serif';
-    src: url(../fonts/dejavu-serif.bold-italic.woff);
+    src: url(/resources/fonts/dejavu-serif.bold-italic.woff);
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Noto Emoji Custom';
-    src: url(../fonts/NotoEmoji-Regular.woff);
+    font-family: 'Noto Emoji';
+    src: url(/resources/fonts/NotoEmoji-Regular.woff);
 }
 
 html {

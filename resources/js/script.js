@@ -147,14 +147,14 @@ async function getHtml(lang, fileName) {
     return result;
 }
 
-function findHowManyBlogPostsExist(lang, position) {
+async function findHowManyBlogPostsExist(lang, position) {
 
     let result = [];
     let originalLastPost = 0;
     let lastPost = 0;
 
     for (let i = 1; i < 1000; i++) {
-        let xhr = new XMLHttpRequest();
+        /*let xhr = new XMLHttpRequest();
 
         xhr.open('HEAD', `resources/html/${lang}/blog/${i}.html`, false);
         xhr.send();
@@ -165,7 +165,17 @@ function findHowManyBlogPostsExist(lang, position) {
         else {
             originalLastPost = i;
             lastPost = i - ((position - 1) * 5);
-        }
+        }*/
+
+        await fetch(`resources/html/${lang}/blog/${i}.html`, {method: "HEAD"}).then(res => {
+            if (res.ok) {
+                originalLastPost = i;
+                lastPost = i - ((position - 1) * 5);
+            }
+            else {
+                i = 1000000;
+            }
+        }).catch(err => console.log('Error:', err));
     }
 
     result.push(originalLastPost);
@@ -198,12 +208,12 @@ function copyLinkToClipboard(lang, path, divId) {
     }
 }
 
-function loadBlogPosts(lang, position) {
+async function loadBlogPosts(lang, position) {
 
     document.getElementById("blogging_space").innerHTML = "";
     let background = getComputedStyle(document.body).backgroundColor;
 
-    let result = findHowManyBlogPostsExist(lang, position);
+    let result = await findHowManyBlogPostsExist(lang, position);
     let originalLastPost = result[0];
     let lastPost = result[1];
 
@@ -352,12 +362,12 @@ function loadSingleBlogPost(lang, post) {
     });
 }
 
-function loadAllBlogPostsTitles(lang, searchContent = "") {
+async function loadAllBlogPostsTitles(lang, searchContent = "") {
     let mainBox = document.getElementById("main_box");
     mainBox.innerHTML = "";
     let background = getComputedStyle(document.body).backgroundColor;
 
-    let result = findHowManyBlogPostsExist(lang, 1);
+    let result = await findHowManyBlogPostsExist(lang, 1);
     let originalLastPost = result[0];
 
     let postCanBeSent = true;
@@ -427,8 +437,18 @@ function start() {
         document.getElementsByTagName('html')[0].setAttribute("lang","pt-BR");
     }
     else {
-        language = "en";
-        document.getElementsByTagName('html')[0].setAttribute("lang","en");
+        if (navigator.language[0] == 'p' && navigator.language[1] == 't') {
+            language = "ptbr";
+            document.getElementsByTagName('html')[0].setAttribute("lang","pt-BR");
+        }
+        else if (navigator.language[0] == 'e' && navigator.language[1] == 's'){
+            language = "es";
+            document.getElementsByTagName('html')[0].setAttribute("lang","es");
+        }
+        else {
+            language = "en";
+            document.getElementsByTagName('html')[0].setAttribute("lang","en");
+        }        
     }
 
     if (page == 'pro') {
@@ -458,7 +478,17 @@ function start() {
         changeBackgroundToDark();
     }
     else {
-        changeBackgroundToLight();
+        if (window.matchMedia) {
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                changeBackgroundToDark();
+            }
+            else {
+                changeBackgroundToLight();
+            }
+        }
+        else {
+            changeBackgroundToLight();
+        }
     }
     
     // Well, get the clicks

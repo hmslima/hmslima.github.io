@@ -191,10 +191,7 @@ function copyLinkToClipboard(lang, path, divId) {
         websitesPort = ":" + window.location.port;
     }
 
-    let language = "";
-    if (lang != 'en') {
-        language = "&lang=" + lang;
-    }
+    let language = "&lang=" + lang;
 
     navigator.clipboard.writeText(window.location.hostname + websitesPort + window.location.pathname + path + language);
 
@@ -435,6 +432,12 @@ function start() {
     
     if (language == 'ptbr') {
         document.getElementsByTagName('html')[0].setAttribute("lang","pt-BR");
+    }
+    else if (language == 'en') {
+        document.getElementsByTagName('html')[0].setAttribute("lang","en");
+    }
+    else if (language == 'es') {
+        document.getElementsByTagName('html')[0].setAttribute("lang","es");
     }
     else {
         if (navigator.language[0] == 'p' && navigator.language[1] == 't') {

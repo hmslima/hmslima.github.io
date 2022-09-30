@@ -417,6 +417,11 @@ footer {
     border-radius: 25px;
 }
 
+.imgBlogFullWidth {
+    display: block;
+    width: 100%;
+}
+
 span.code {
     font-family: 'Courier New', Courier, monospace;
     background-color: #383837;

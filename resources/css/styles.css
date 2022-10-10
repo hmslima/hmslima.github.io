@@ -221,6 +221,7 @@ h3 {
     font-weight: bold;
     text-align: center;
 }
+.blogPost h3 {text-align: left;}
 
 .BigContainer {
     width: 70%;
@@ -422,6 +423,11 @@ footer {
     width: 100%;
 }
 
+div.column2 img {
+    display: block;
+    width: 100%;
+}
+
 span.code {
     font-family: 'Courier New', Courier, monospace;
     background-color: #383837;
@@ -510,6 +516,7 @@ div.column3 { /* You put it inside a div.row */
     div.row {display: block;}
     div.column2 {width: 100%;}
     div.column3 {width: 100%;}
+    div.column2 img {margin-bottom: 1rem;}
 }
 
 @media only screen and (max-width: 600px) {

@@ -146,6 +146,10 @@ table, th, td {
 }
 .download_button:hover {cursor: pointer; background-color: #204e45;}
 
+.downloadTheEditableFile {
+    font-size: 0.8rem;
+}
+
 footer {
     margin-top: 1rem;
     text-align: center;
